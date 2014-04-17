@@ -1,0 +1,198 @@
+/**
+ * WooSlider
+ *
+ * Styles which integrate this theme with WooSlider.
+ * This stylesheet is only enqueued if WooSlider is activated.
+ * http: //www.woothemes.com/products/wooslider/
+ */
+/**
+ * Variables
+ */
+/**
+ * Functions
+ */
+.wooslider-container a:active,
+.wooslider a:active,
+.wooslider-container a:focus,
+.wooslider a:focus {
+  outline: none;
+}
+.slides,
+.wooslider-control-nav,
+.wooslider-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wooslider {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 0 0 #888888;
+  -webkit-box-shadow: 0 0 0 0 #888888;
+  -moz-box-shadow: 0 0 0 0 #888888;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: none;
+  border: 0;
+}
+body .wooslider .slide-content {
+  margin: 0;
+}
+.wooslider {
+  margin: 0 0 1.618em;
+  position: relative;
+  zoom: 1;
+}
+.wooslider ul.slides {
+  zoom: 1;
+  margin: 0;
+  padding: 0;
+}
+.wooslider ul.slides li {
+  list-style: none;
+  position: relative;
+}
+.wooslider ul.slides img {
+  padding: 0;
+}
+.wooslider .wooslider-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wooslider .wooslider-direction-nav li {
+  list-style: none;
+}
+.wooslider .wooslider-direction-nav a {
+  position: absolute;
+  display: block;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  font-size: 2em;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  text-align: center;
+  filter: alpha(opacity=@opacity * 100);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  -webkit-transform: translateZ(0);
+  line-height: 1;
+  text-indent: -9999px;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: none;
+  border: 2px solid;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.wooslider .wooslider-direction-nav a:before {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-indent: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  content: "\f179";
+  margin: 0;
+  font-size: 1em;
+}
+.wooslider .wooslider-direction-nav a:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+.wooslider .wooslider-direction-nav .wooslider-next {
+  right: .53em;
+}
+.wooslider .wooslider-direction-nav .wooslider-next:before {
+  content: "\f105";
+}
+.wooslider .wooslider-direction-nav .wooslider-prev {
+  left: .53em;
+}
+.wooslider .wooslider-direction-nav .wooslider-prev:before {
+  content: "\f104";
+}
+.wooslider .wooslider-direction-nav.wooslider-disabled {
+  filter: alpha(opacity=@opacity * 100);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  opacity: 0.3;
+  cursor: default;
+}
+.wooslider:hover .wooslider-direction-nav a {
+  filter: alpha(opacity=@opacity * 100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+.wooslider .wooslider-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -2.618em;
+  text-align: center;
+  z-index: 9;
+  margin: 0;
+  padding: 0;
+  filter: alpha(opacity=@opacity * 100);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+.wooslider .wooslider-control-nav:hover {
+  filter: alpha(opacity=@opacity * 100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+.wooslider .wooslider-control-nav li {
+  margin: 0 .202em;
+  display: inline-block;
+  list-style: none;
+}
+.wooslider .wooslider-control-nav li a {
+  width: 6px;
+  height: 6px;
+  display: block;
+  border: 2px solid #222;
+  cursor: pointer;
+  text-indent: -9999px;
+  background: none;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.wooslider .wooslider-control-nav li a:hover {
+  background: #555;
+  border-color: #555;
+}
+.wooslider .wooslider-control-nav li a.wooslider-active {
+  border-color: #222;
+  background: #222;
+  cursor: default;
+}
+.wooslider .slide-title {
+  margin: 0 0 10px;
+}
+.wooslider .slide-content {
+  position: relative;
+}
