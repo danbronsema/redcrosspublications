@@ -77,8 +77,6 @@ function columns_head($defaults) {
  
     return $defaults;
 }
-
-
 function columns_content_taxonomy($column, $column_name, $id) {
   if ($column_name == 'date_published') {
   	if (get_field('date_published',"category_{$id}")) {
@@ -87,7 +85,6 @@ function columns_content_taxonomy($column, $column_name, $id) {
 		}
 	}
 }
-
 add_filter('manage_edit-category_columns', 'columns_head');
 add_filter('manage_category_custom_column', 'columns_content_taxonomy', 10, 3);
 

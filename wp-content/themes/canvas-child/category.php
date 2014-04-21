@@ -77,6 +77,7 @@
     <?php foreach ($posts_array as $post) : ?>
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         <p><?php echo $post->post_excerpt ?></p>
+        <a href="<?php the_permalink();?>" data-fancybox-type="iframe" class="various" id="<?php the_ID(); ?>" data-class="<?php echo get_post_type( get_the_ID() ); ?>">View item</a>
         <p><?php echo get_the_post_thumbnail() ?></p>
     <?php endforeach; ?>
     </div>
